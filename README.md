@@ -104,13 +104,72 @@ Open [http://localhost:3000](http://localhost:3000) and scroll to experience the
 
 ---
 
+## 🤝 Open Source — Contributions Welcome!
+
+This project is **open for contributions**! Whether you're a designer, developer, or car enthusiast — we'd love your help in expanding this experience.
+
+### 🚗 Adding More Cars (Primary Goal)
+
+The biggest area for contribution is **adding new car tabs** — turning this from a single-car showcase into a multi-car gallery experience. Here's how you can contribute a new car:
+
+1. **Fork** the repository and create a new branch (`feature/add-<car-name>`)
+2. **Prepare your frames** — Extract 200–240 sequential frames from a 3D rotation video of the car
+   - Place them in `app/public/frames/<car-name>/`
+   - Use the naming format `frame-001.jpg`, `frame-002.jpg`, etc.
+   - Use the Python scripts in `app/scripts/` for batch processing
+3. **Add car data** — Create a new data entry in `app/data/carData.ts` following the existing `fenomenoData` structure:
+   - Brand, model, tagline, price
+   - 4 scroll phases with titles and descriptions
+   - 8 spec values
+   - 4 feature cards
+4. **Submit a Pull Request** with a description and a screenshot/GIF of the experience
+
+#### 💡 Car Ideas
+
+| Car                        | Status      |
+| -------------------------- | ----------- |
+| Lamborghini Fenomeno       | ✅ Complete |
+| Porsche 911 GT3 RS         | 🟡 Open     |
+| Ferrari SF90 Stradale      | 🟡 Open     |
+| McLaren P1                 | 🟡 Open     |
+| Bugatti Chiron             | 🟡 Open     |
+| Pagani Huayra              | 🟡 Open     |
+| *Your favorite car here!*  | 🟡 Open     |
+
+### 🛠️ Other Ways to Contribute
+
+- **UI/UX improvements** — Better animations, transitions, or responsive layouts
+- **Performance optimization** — Lazy loading, image compression, frame caching strategies
+- **New sections** — Interior gallery, sound clips, comparison mode
+- **Accessibility** — Keyboard navigation, screen reader support, reduced motion preferences
+- **Bug fixes** — Found something broken? Open an issue or submit a fix!
+
+### 📋 Contribution Guidelines
+
+1. **Fork & Branch** — Always work on a feature branch, never directly on `main`
+2. **Keep it clean** — Follow the existing code style (TypeScript, component structure)
+3. **Test locally** — Make sure `npm run build` passes before submitting
+4. **Descriptive PRs** — Include screenshots or recordings for visual changes
+5. **Be respectful** — This is a learning project; all skill levels are welcome
+
+```bash
+# Fork, clone, and get started
+git clone https://github.com/<your-username>/Joy-S-07-3D-Car-Website-Vibe_Coded.git
+cd Joy-S-07-3D-Car-Website-Vibe_Coded/app
+npm install
+npm run dev
+```
+
+---
+
 ## 📄 License
 
-This project is for educational and portfolio purposes.
+This project is open source and available for educational, portfolio, and community purposes.
 
 ---
 
 <p align="center">
   <strong>FENOMENO ROADSTER</strong><br/>
-  <em>Born from relentless obsession. 10 units produced worldwide.</em>
+  <em>Born from relentless obsession. 10 units produced worldwide.</em><br/><br/>
+  ⭐ <strong>Star this repo</strong> if you find it cool — it helps others discover it!
 </p>
